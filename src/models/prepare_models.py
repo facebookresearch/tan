@@ -14,7 +14,6 @@ from opacus.validators import ModuleValidator
 import torchvision
 from src.data.dataset import get_data_loader,get_data_loader_augmented, populate_dataset, getImagenetTransform, build_transform
 import torch.optim as optim
-import torch_optimizer
 from src.models.augmented_grad_samplers import AugmentationMultiplicity
 import torchvision.transforms as transforms
 from torchvision.datasets import CIFAR10
@@ -77,8 +76,6 @@ def prepare_optimizer(weights, args):
         optimizer = optim.AdamW(weights, args.AdamW_lr,(args.AdamW_beta1,args.AdamW_beta1), args.AdamW_eps)
     elif args.optimizer =="Adam":
         optimizer = optim.Adam(weights, args.AdamW_lr,(args.AdamW_beta1,args.AdamW_beta1), args.AdamW_eps)
-    elif args.optimizer == "lamb":
-        optimizer = torch_optimizer.Lamb(weights, lr=args.lr)
     else:
         optimizer = optim.SGD(weights, lr=args.lr, momentum=args.momentum, dampening=args.dampening)
     return optimizer

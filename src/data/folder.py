@@ -21,8 +21,8 @@ import numpy as np
 logger = getLogger()
 
 CACHE_DATASET = {
-    '/datasets01/imagenet_full_size/061417/train': '/checkpoints/tomsander/imagenet_train.pkl',
-    '/datasets01/imagenet_full_size/061417/val': '/checkpoints/tomsander/imagenet_val.pkl',
+    '/datasets01/imagenet_full_size/061417/train': '/checkpoint/asablayrolles/imagenet_train.pkl',
+    '/datasets01/imagenet_full_size/061417/val': '/checkpoint/asablayrolles/imagenet_val.pkl',
     '/checkpoints/tomsander/imagenet/imagenet_full_size/061417/train':'/checkpoints/tomsander/imagenet_train2.pkl',
     '/checkpoints/tomsander/imagenet/imagenet_full_size/061417/val':'/checkpoints/tomsander/imagenet_val2.pkl',
 }

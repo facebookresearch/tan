@@ -19,7 +19,6 @@ from src.data.dataset import get_data_loader,get_data_loader_augmented, populate
 import src.models.NFnet as NFnet
 import timm
 from src.models.NFnet import MyScaledStdConv2d, MyScaledStdConv2dSame,Expand
-import torch_optimizer
 
 import time
 
