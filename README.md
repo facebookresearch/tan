@@ -65,6 +65,5 @@ If the code and/or paper contained in this repository were useful to you please 
 ## Contributing
 See the [CONTRIBUTING](https://github.com/facebookresearch/tan/CONTRIBUTING.md) for how to contribute to this library.
 
-
 ## License
 This code is released under BSD-3-Clause, as found in the [LICENSE](https://github.com/facebookresearch/tan/LICENSE) file.
